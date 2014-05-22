@@ -1,6 +1,6 @@
 {
-  "name": "join-stream",
-  "version": "0.0.0",
+  "name": "join-stream2",
+  "version": "0.1.0",
   "description": "intersperse stream chunks with separators",
   "main": "index.js",
   "bin": {},
@@ -23,9 +23,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/substack/join-stream.git"
+    "url": "git://github.com/jden/join-stream2.git"
   },
-  "homepage": "https://github.com/substack/join-stream",
+  "homepage": "https://github.com/jden/join-stream2",
   "keywords": [
     "join",
     "stream",
@@ -38,5 +38,8 @@
     "email": "mail@substack.net",
     "url": "http://substack.net"
   },
+  "contributors": [
+    "jden <jason@denizac.org>"
+  ],
   "license": "MIT"
 }
