@@ -27,7 +27,7 @@ abc,def,hi,jkl
 # methods
 
 ``` js
-var joinStream = require('join-stream')
+var joinStream = require('join-stream2')
 ```
 
 ## joinStream(sep='\n', opts={})
