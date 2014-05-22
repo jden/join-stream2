@@ -1,4 +1,4 @@
-var through = require('through');
+var through = require('through2');
 
 module.exports = function (sep, opts) {
     if (typeof sep === 'object') {
@@ -8,18 +8,19 @@ module.exports = function (sep, opts) {
     if (!opts) opts = {};
     
     var num = 0;
-    var tr = through(function (buf) {
+    var tr = through(function (buf, encoding, callback) {
         if (opts.end) {
-            this.emit('data', buf);
-            this.emit('data', sep);
+            this.push(buf);
+            this.push(sep);
         }
         else {
             if (num > 0) {
-                this.emit('data', sep);
+                this.push(sep);
             }
-            this.emit('data', buf);
+            this.push(buf);
         }
         num ++;
+        callback()
     });
     
     return tr;

@@ -1,39 +1,42 @@
 {
-    "name" : "join-stream",
-    "version" : "0.0.0",
-    "description" : "intersperse stream chunks with separators",
-    "main" : "index.js",
-    "bin" : {},
-    "directories" : {
-        "example" : "example",
-        "test" : "test"
-    },
-    "dependencies" : {
-        "through" : "~0.1.4"
-    },
-    "devDependencies" : {
-        "event-stream" : "~3.0.7",
-        "tap" : "~0.3.0"
-    },
-    "scripts" : {
-        "test" : "tap test/*.js"
-    },
-    "repository" : {
-        "type" : "git",
-        "url" : "git://github.com/substack/join-stream.git"
-    },
-    "homepage" : "https://github.com/substack/join-stream",
-    "keywords" : [
-        "join",
-        "stream",
-        "intersperse",
-        "separator",
-        "through"
-    ],
-    "author" : {
-        "name" : "James Halliday",
-        "email" : "mail@substack.net",
-        "url" : "http://substack.net"
-    },
-    "license" : "MIT"
+  "name": "join-stream",
+  "version": "0.0.0",
+  "description": "intersperse stream chunks with separators",
+  "main": "index.js",
+  "bin": {},
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "dependencies": {
+    "through": "~0.1.4",
+    "through2": "^0.4.2"
+  },
+  "devDependencies": {
+    "event-stream": "~3.0.7",
+    "tap": "~0.3.0",
+    "from": "^0.1.3",
+    "concat-stream": "^1.4.5"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/substack/join-stream.git"
+  },
+  "homepage": "https://github.com/substack/join-stream",
+  "keywords": [
+    "join",
+    "stream",
+    "intersperse",
+    "separator",
+    "through"
+  ],
+  "author": {
+    "name": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net"
+  },
+  "license": "MIT"
 }

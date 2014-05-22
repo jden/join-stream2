@@ -2,12 +2,14 @@
 
 Intersperse stream chunks with separators.
 
-[![build status](https://secure.travis-ci.org/substack/join-stream.png)](http://travis-ci.org/substack/join-stream)
+[![build status](https://secure.travis-ci.org/jden/join-stream2.png)](http://travis-ci.org/jden/join-stream2)
+
+forked from substack/[join-stream](https://npm.im/join-stream) for streams2 support.
 
 # example
 
 ``` js
-var joinStream = require('join-stream');
+var joinStream = require('join-stream2');
 var split = require('event-stream').split;
 
 process.stdin
@@ -43,7 +45,7 @@ separator after the last element.
 With [npm](https://npmjs.org) do:
 
 ```
-npm install join-stream
+npm install join-stream2
 ```
 
 # license
