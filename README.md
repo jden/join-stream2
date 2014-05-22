@@ -1,4 +1,4 @@
-# join-stream
+# join-stream2
 
 Intersperse stream chunks with separators.
 
